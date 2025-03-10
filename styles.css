@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: "Roboto Slab";
+}
+
+body {
+    height: 650px;
+    width: 100%;
+    background: url(main_bg.jpg) center/cover no-repeat;
+}
+
+
+.container{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.title {
+    font-size: 48px;
+    color: #c78030;
+    margin-bottom: 20px;
+}
+
+.timer{
+    font-size: 32px;
+    color: #c78030;
+    margin-bottom: 30px;
+}
+
+button {
+   margin: 0 auto;
+    margin-right: 30px;
+    margin-top: 60px;
+    width: 250px;
+    height: 60px;
+    background-color: transparent;
+    border: 1px solid #c78030;
+    font-size: 18px;
+    color: #c78030;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 0 0 10px #c78030;
+  }
