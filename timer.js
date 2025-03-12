@@ -3,6 +3,7 @@ const timer = document.getElementById('timer')
 const btnStart = document.getElementById('start')
 const btnStop = document.getElementById('stop')
 const btnReset = document.getElementById('reset')
+const input = document.querySelector('.input')
 let timerId
 
 let timeLeft = 1500 // 1500 секунд = 25 min * 60 seconds
@@ -53,6 +54,12 @@ btnReset.addEventListener('click', function () {
 })
 
 btnStart.addEventListener('click', function () {
+    if (input.value != '') {
+        const minutes = input.value 
+        const seconds = minutes*60
+        console.log(seconds);
+        timeLeft = seconds
+    }
     btnStart.setAttribute('disabled', true)
     timerId = setInterval(function () {
         timeLeft = timeLeft - 1
@@ -61,5 +68,8 @@ btnStart.addEventListener('click', function () {
     },
         1000 // 1000 ms = 1 second
     )
+
+
 })
+
 
