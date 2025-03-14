@@ -10,12 +10,16 @@ body {
     height: 650px;
     width: 100%;
     background: url(main_bg.jpg) center/cover no-repeat;
+    min-height: 100vh;
+    height: auto;
 }
 
 
-.container{
+.container {
     margin-top: 50px;
     margin-left: 50px;
+    min-height: 100vh;
+    height: auto;
 }
 
 .title {
@@ -24,14 +28,35 @@ body {
     margin-bottom: 20px;
 }
 
-.timer{
+h2,
+.inputSpan {
+    font-size: 42px;
+    color: #c78030;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 0 10px #c78030;
     font-size: 32px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.inputSpan{
+    margin-left: 20px;
+}
+
+.timer {
+    font-size: 42px;
     color: #c78030;
     margin-bottom: 30px;
 }
 
 button {
-   margin: 0 auto;
+    margin: 0 auto;
     margin-right: 30px;
     margin-top: 60px;
     width: 250px;
@@ -45,4 +70,4 @@ button {
 
 button:hover {
     box-shadow: 0 0 10px #c78030;
-  }
+}
