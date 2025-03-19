@@ -41,12 +41,14 @@ function pauseTimer() {
 
 btnStop.addEventListener('click', function () {
     pauseTimer()
+    input.value = ''
 })
 
 function resetTimer() {
     timeLeft = 1500
     pauseTimer()
     renderFunction()
+    input.value = ''
 }
 
 btnReset.addEventListener('click', function () {
